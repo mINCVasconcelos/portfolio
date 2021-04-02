@@ -1,0 +1,29 @@
+.navbar{
+    background-color: brown;
+    height: 300px;
+}
+
+.first_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description .title{
+    font-size: 2.5rem;
+}
+
+.description .sub_title{
+    font-size: 2rem;
+    color: gray;
+}
+
+.avatar img{
+    max-width: 250px;
+}
