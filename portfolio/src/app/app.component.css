@@ -16,6 +16,7 @@
     font-family: 'eurostile', sans-serif; 
     font-size: 3rem;   
     line-height: 1.125;
+    text-align: center;
 }
 
 .description h2{
@@ -23,10 +24,11 @@
     font-family: 'europa', sans-serif; 
     font-size: 1.5rem; 
     font-weight: 300;
+    text-align: center;
 }
 
 .avatar{
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 .avatar img{
@@ -55,12 +57,13 @@
     align-items: center;
     width: 45%;
     padding-top: 7rem;
+    height: 100%;
 }
 
 .about_me h1{
     color: white; 
-    font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 2.5rem;
+    font-family: 'europa', sans-serif; 
+    font-size: 2rem;
     font-weight: bold; 
     letter-spacing: -1px; 
     line-height: 1; 
@@ -69,11 +72,11 @@
 
 .about_me h2{
     color: white; 
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'europa', sans-serif; 
     font-size: 1.25rem; 
     font-weight: 300; 
     line-height: 32px; 
-    margin: 0; 
+    margin-bottom: 6rem;
     text-align: center;
 }
 
@@ -85,30 +88,90 @@
 .columns{
     display: flex;
     background-color: white;
-    height: 500px;
     margin-top: -9rem;
-    width: 70%;
-    border-radius: 6px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
+    max-width: 1200px;
+    /*width: 62%;*/
+    border-radius: 20px;
     box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
 }
 
 .first_column, .second_column{
-    height: 500px;
-    width: 33%;
+    width: 33.3%;
     border-right: 1px solid #E6ECF8;
 }
 
-@media screen and (max-width: 928px){
+.third_column{
+    width: 33.4%;
+}
+
+.first_column, .second_column, .third_column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 45px;
+}
+
+.icon{
+    width: 48px;
+    height: 48px;
+    margin-bottom: 2rem;
+}
+
+.third_section .title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'europa', sans-serif; 
+    text-align: center;
+}
+
+.third_section .text{
+    font-size: 18px;
+    font-family: 'europa', sans-serif; 
+    color: gray;
+    text-align: center;
+}
+
+.third_section .sub_title{
+    font-size: 18px;
+    font-family: 'europa', sans-serif; 
+    font-weight: 550;
+    color: #2069e0;
+    margin-top: 50px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.third_section .list{
+    list-style: none;
+    text-align: center;
+    padding-left: 0px;
+}
+
+.third_section .list li{
+    font-size: 18px;
+    font-family: 'europa', sans-serif; 
+    color: gray;
+    text-align: center;
+    line-height: 2rem;
+}
+
+@media screen and (max-width: 975px){
+    .about_me{
+        padding-top: 4rem;
+        width: 70%; 
+    }
+
     .about_me h1{
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 }
 
 @media screen and (max-width: 735px){
+    .about_me{
+        padding-top: 4rem;
+        width: 90%;
+    }
+
     .about_me h1{
         font-size: 1.5rem;
     }
@@ -118,7 +181,16 @@
     }
 }
 
-.third_section{
-    min-height: 500px;
-}
+@media screen and (max-width: 700px){
+    .columns{
+        flex-direction: column;
+    }
 
+    .first_column, .second_column, .third_column{
+       width: auto;
+    }
+
+    .first_column, .second_column{
+        border-bottom: 1px solid #E6ECF8;
+    }
+}
