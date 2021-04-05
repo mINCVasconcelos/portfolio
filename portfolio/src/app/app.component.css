@@ -89,8 +89,9 @@
     display: flex;
     background-color: white;
     margin-top: -9rem;
-    width: 70%;
-    border-radius: 6px;
+    max-width: 1200px;
+    /*width: 62%;*/
+    border-radius: 20px;
     box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
 }
 
@@ -180,3 +181,16 @@
     }
 }
 
+@media screen and (max-width: 700px){
+    .columns{
+        flex-direction: column;
+    }
+
+    .first_column, .second_column, .third_column{
+       width: auto;
+    }
+
+    .first_column, .second_column{
+        border-bottom: 1px solid #E6ECF8;
+    }
+}
