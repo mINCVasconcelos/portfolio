@@ -155,6 +155,61 @@
     line-height: 2rem;
 }
 
+.last_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+    background-color: #2069e0;
+    height: 400px;
+    width: 100%;
+}
+
+.last_section .title{
+    color: white; 
+    font-family: 'europa', sans-serif; 
+    font-size: 1.5rem;
+    font-weight: bold; 
+    letter-spacing: -1px; 
+    line-height: 1; 
+    text-align: center;
+    max-width: 320px;
+    margin-bottom: 3rem;
+}
+
+.social_media{
+    display: flex;  
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+}
+
+.social_button{
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 100%;
+    padding: 14px;
+    width: 22px;
+    height: 22px;
+    color: white;
+    transition: all .2s ease-in-out;
+    margin-right: 2rem;
+}
+
+.social_button:hover{
+    background: white;
+    color: #2069e0;
+    border: 2px solid white;
+}
+
+.last_section .text{
+    font-size: 18px;
+    font-family: 'europa', sans-serif; 
+    color: white; 
+    text-align: center;
+}
+
 @media screen and (max-width: 975px){
     .about_me{
         padding-top: 4rem;
